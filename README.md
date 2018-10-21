@@ -19,7 +19,7 @@ gcloud compute instances create \
   --metadata startup-script='wget -O - https://github.com/Otus-DevOps-2018-09/redbull05689_infra/blob/cloud-testapp/startupscript.sh | bash'
 
 
-  gcloud compute firewall-rules create \
+gcloud compute firewall-rules create \
     default-puma-server \
     --allow tcp:9292 \
     --target-tags puma-server \
