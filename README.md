@@ -18,7 +18,6 @@ gcloud compute instances create \
   --restart-on-failure \
   --metadata startup-script='wget -O - https://github.com/Otus-DevOps-2018-09/redbull05689_infra/blob/cloud-testapp/startupscript.sh | bash'
 
-
 gcloud compute firewall-rules create \
     default-puma-server \
     --allow tcp:9292 \
