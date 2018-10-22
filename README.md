@@ -23,3 +23,4 @@ gcloud compute firewall-rules create \
     --allow tcp:9292 \
     --target-tags puma-server \
     --description "Allow incoming traffic for #puma-server on tcp:9292"
+
