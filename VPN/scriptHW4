@@ -1,0 +1,17 @@
+gcloud compute instances create hw-4 \
+  --boot-disk-size=10GB \
+  --image=ubuntu-1810-cosmic-v20181018 \
+  --image-project=ubuntu-os-cloud \
+  --machine-type=f1-micro \
+  --labels=role=willberemovedin24h \
+  --preemptible \
+  --restart-on-failure \
+  --zone=europe-west1-d \
+  --metadata startup-script='sudo apt-get update; \
+   sudo apt install ruby-full; \
+   sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4 ; \
+   sudo apt-get install -y mongodb-org ; \
+   sudo apt-get install libcurl4 openssl ; \
+   export PATH=<mongodb-install-directory>/bin:$PATH; \
+   sudo systemctl enable mongodb.service ; \
+   sudo systemctl start mongodb;'
