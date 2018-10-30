@@ -3,3 +3,4 @@ public_key_path = "~/.ssh/redbull05689.pub"
 private_key_path = "~/.ssh/redbull05689"
 disk_image = "reddit-base"
 zone = "europe-west1-b"
+
