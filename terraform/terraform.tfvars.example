@@ -1,5 +1,5 @@
 project = "infra-219417"
-public_key_path = "~/.ssh/redbull05689.pub"
-private_key_path = "~/.ssh/redbull05689"
+public_key_path = "~/home/redbull05689/.ssh/redbull05689.pub"
+private_key_path = "/home/redbull05689/.ssh/redbull05689"
 disk_image = "reddit-base"
-zone = "europe-west1-b" 
+zone = "europe-west1-b"
