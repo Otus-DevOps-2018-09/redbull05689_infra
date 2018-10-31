@@ -24,9 +24,7 @@ resource "google_compute_instance" "app" {
 
   metadata {
     ssh-keys = "redbull05689:${file(var.public_key_path)}"
-  
-}
-
+  }
 
   tags = ["reddit-app-${count.index}"]
 
@@ -51,12 +49,6 @@ resource "google_compute_instance" "app" {
     script = "files/deploy.sh"
   }
 }
-
-
-
-
-
-
 
 resource "google_compute_firewall" "firewall_puma" {
   name = "allow-puma-default"
