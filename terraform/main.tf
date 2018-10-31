@@ -11,7 +11,8 @@ resource "google_compute_project_metadata" "default" {
 }
 
 resource "google_compute_instance" "app" {
-  name         = "reddit-app"
+  count        = 2
+  name         = "reddit-app-${count.index}"
   machine_type = "g1-small"
   zone         = "${var.zone}"
 
@@ -27,7 +28,7 @@ resource "google_compute_instance" "app" {
 }
 
 
-  tags = ["reddit-app"]
+  tags = ["reddit-app-${count.index}"]
 
   network_interface {
     network       = "default"
@@ -50,6 +51,12 @@ resource "google_compute_instance" "app" {
     script = "files/deploy.sh"
   }
 }
+
+
+
+
+
+
 
 resource "google_compute_firewall" "firewall_puma" {
   name = "allow-puma-default"
