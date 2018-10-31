@@ -16,7 +16,7 @@ resource "google_compute_instance" "app" {
   }
 
   metadata {
-    ssh-keys = "appuser:${file(var.public_key_path)}"
+    ssh-keys = "redbull05689:${file(var.public_key_path)}"
   }
 
   tags = ["reddit-app"]
@@ -28,7 +28,7 @@ resource "google_compute_instance" "app" {
 
   connection {
     type        = "ssh"
-    user        = "appuser"
+    user        = "redbull05689"
     agent       = false
     private_key = "${file(var.private_key_path)}"
   }
