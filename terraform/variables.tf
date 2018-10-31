@@ -19,7 +19,7 @@ variable zone {
   description = "Zone there situable in"
 }
 
-
 variable private_key_path {
   description = "Path to the private key used for ssh access"
 }
+
