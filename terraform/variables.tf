@@ -27,3 +27,8 @@ variable instance_count {
   description = "Count of instances"
   default     = "1"
 }
+
+variable app_disk_image {
+ description = "Disk image for reddit app"
+ default = "reddit-app-base"
+ }
