@@ -12,9 +12,7 @@ variable instance_count {
   default     = "1"
 }
 
-variable public_key_path {
- description = "Path to the public key used to connect to instance"
- default = "~/.ssh/redbull05689.pub"
+
 }
 variable zone {
  description = "Zone"
@@ -25,11 +23,7 @@ variable app_disk_image {
  default = "reddit-app-base"
 }
 
-variable public_key_path {
- description = "Path to the public key used to connect to instance"
-}
-variable zone {
- description = "Zone"
+
 }
 variable db_disk_image {
  description = "Disk image for reddit db"
