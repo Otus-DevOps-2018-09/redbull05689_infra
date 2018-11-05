@@ -13,7 +13,7 @@ variable instance_count {
 }
 
 
-}
+
 variable zone {
  description = "Zone"
  default = "europe-west1-b"
