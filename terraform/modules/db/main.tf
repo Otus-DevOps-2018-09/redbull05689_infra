@@ -26,5 +26,5 @@ resource "google_compute_instance" "db" {
  # правило применимо к инстансам с тегом ...
  target_tags = ["reddit-db"]
  # порт будет доступен только для инстансов с тегом ...
- source_tags = ["reddit-app"]
+ #source_tags = ["reddit-app"]
  }
