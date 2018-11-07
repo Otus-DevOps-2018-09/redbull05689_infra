@@ -2,7 +2,7 @@
 Description=puma
 
 [Service]
-WorkingDirectory=/home/redbull05689/reddit
+WorkingDirectory=/home/appuser/reddit
 ExecStart=/usr/local/bin/puma
 
 [Install]
