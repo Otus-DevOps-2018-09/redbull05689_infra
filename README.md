@@ -16,7 +16,7 @@ gcloud compute instances create \
   --machine-type=g1-small \
   --tags puma-server \
   --restart-on-failure \
-  --metadata startup-script='wget -O - https://github.com/Otus-DevOps-2018-09/redbull05689_infra/blob/cloud-testapp/startupscript.sh | bash'
+  --metadata startup-script=' | bash'
 
 gcloud compute firewall-rules create \
     default-puma-server \
