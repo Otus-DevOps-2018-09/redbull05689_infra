@@ -1,3 +1,4 @@
+w
 
 provider "google" {
   version = "1.4.0"
@@ -17,3 +18,5 @@ output storage-bucket_url {
   value = "${module.storage-bucket.url}"
 }
 
+
+w
