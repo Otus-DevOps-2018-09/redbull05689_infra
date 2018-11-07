@@ -1,10 +1,6 @@
-
-
-data "terraform_remote_state" "reddit" {
-  backend = "gcs"
-  config {
-    bucket  = "storage-bucket-infra-219417-reddit"
-    prefix  = "prod"
+terraform {
+  backend "gcs" {
+    bucket = "redbull05689-bucket-prod"
+    prefix = "terraform/prod"
   }
 }
-

@@ -1,9 +1,6 @@
-
-
-data "terraform_remote_state" "reddit" {
-  backend = "gcs"
-  config {
-    bucket  = "storage-bucket-infra-219417-reddit"
-    prefix  = "stage"
+terraform {
+  backend "gcs" {
+    bucket = "redbull05689-bucket-stage"
+    prefix = "terraform/stage"
   }
 }

@@ -1,5 +1,6 @@
 variable project {
   description = "Project ID"
+  default = "infra-219417"
 }
 
 variable region {
@@ -7,30 +8,39 @@ variable region {
   default     = "europe-west1"
 }
 
-variable instance_count {
-  description = "Count of instances"
-  default     = "1"
+variable public_key_path {
+  description = "Path to the public key used for ssh access"
+  default = "/home/redbull05689/.ssh/redbull05689.pub"
+}
+
+variable private_key_path {
+  description = "Path to the private key used for ssh access"
+  default     = "/home/redbull05689/.ssh/redbull05689"
 }
 
 
 
 variable zone {
- description = "Zone"
- default = "europe-west1-b"
+  description = "Zone"
+  default     = "europe-west1-b"
 }
+
+variable instance_count {
+  description = "Count of instances"
+  default     = "1"
+}
+
 variable app_disk_image {
- description = "Disk image for reddit app"
- default = "reddit-app-base"
+  description = "Disk image for reddit app"
+  default     = "reddit-app-base"
 }
-
-
 
 variable db_disk_image {
- description = "Disk image for reddit db"
- default = "reddit-db-base"
+  description = "Disk image for reddit db"
+  default     = "reddit-db-base"
 }
 
 variable source_ranges {
-  description = "Allowed IP addresses"
-  default     = ["0.0.0.0/0"]
+  description = "IP address for firewall rule"
+  default = "0.0.0.0/0"
 }

@@ -1,21 +1,21 @@
 variable public_key_path {
- description = "Path to the public key used to connect to instance"
- default = "~/.ssh/redbull05689.pub"
+  description = "Path to the public key used to connect to instance"
 }
+
 variable zone {
- description = "Zone"
- default = "europe-west1-b"
+  description = "Zone"
 }
+
 variable app_disk_image {
- description = "Disk image for reddit app"
- default = "reddit-app-base"
+  description = "Disk image for reddit app"
+  default     = "reddit-app-base"
 }
 
-
-variable "private_key_path" {
+variable private_key_path {
   description = "Path to the private key used for ssh access"
+  default     = "/home/redbull05689/.ssh/redbull05689"
+  
 }
-
-variable "db_ip_addr" {
-  description = "mongodb internal ip"
+variable db_ip {
+  description = "IP DataBase"
 }
