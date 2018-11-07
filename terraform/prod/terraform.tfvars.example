@@ -4,3 +4,5 @@ private_key_path = "~/.ssh/appuser"
 disk_image = "reddit-base" 
 zone = "europe-west1-b"
 source_ranges = "0.0.0.0/0"
+
+w
