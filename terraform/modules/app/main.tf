@@ -30,12 +30,12 @@ resource "google_compute_instance" "app" {
   }
 
   provisioner "file" {
-    source      = "../modules/app/puma.service"
+    source      = "../files/puma.service"
     destination = "/tmp/puma.service"
   }
 
   provisioner "file" {
-    source      = "../modules/app/deploy.sh"
+    source      = "../files/deploy.sh"
     destination = "deploy.sh"
   }
 

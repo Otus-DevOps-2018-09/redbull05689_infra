@@ -13,8 +13,6 @@ module "storage-buckett" {
   name    = ["redbull05689-bucket-stage", "redbull05689-bucket-prod"]
 }
 
-
-
 output storage-bucket_url {
   value = "${module.storage-bucket.url}"
 }
