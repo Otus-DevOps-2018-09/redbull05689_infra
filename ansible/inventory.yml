@@ -9,7 +9,4 @@ db:
   hosts: 
     dbserver: 
       ansible_host: 35.240.12.221 
-#test:
-#  hosts:
-#    testserver:
-#      ansible_host: 35.204.30.82  
+
