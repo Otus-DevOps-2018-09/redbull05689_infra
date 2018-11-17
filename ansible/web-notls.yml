@@ -1,0 +1,24 @@
+---
+- name: Configure web server with nginx
+- hosts: test
+  tasks:
+  - name: install nginx
+    apt:
+      name: nginx
+      state: latest
+  - name: copy nginx config config file
+    template:
+      src: /files/nginx.conf
+      dest: /etc/nginx/sites-available/default
+  - name: enable configuration
+    file:
+      dest=/etx/nginx/sites-enabled/default
+      src=/etc/nginx/sites-available/default
+      state=link
+  - name: copy index file
+    template:
+        src=tem plates/index.html.j2 
+        dest=/usr/share/nginx/html/index.html
+        mode=0644
+  - name:  restart nginx
+    service: name=nginx state=restarted
