@@ -25,7 +25,7 @@
       "network": "{{user `network`}}",
       "ssh_username": "appuser"
     }
-  ],
+  ]
 }
 
 
