@@ -5,3 +5,6 @@ tfstate.backup
 *.tfvars
 .terraform/
 terraform.tfstate.backup
+*.retry
+jdauphant.nginx
+vault.key
