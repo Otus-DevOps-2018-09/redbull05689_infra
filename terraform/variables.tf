@@ -1,5 +1,5 @@
 variable project {
-  description = "Project ID"
+  description = "Project id"
   default = "infra-219417"
 }
 
