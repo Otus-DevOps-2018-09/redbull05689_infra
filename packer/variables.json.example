@@ -1,5 +1,9 @@
 {
     "project_id": "myproject",
+<<<<<<< HEAD
     "source_image_family": "ubuntu-1604-lts",
+=======
+    "source_image_family": "ubuntu-1804-lts",
+>>>>>>> 11e6a1493386489db96cf576959e377f4fd74548
     "machine_type": "f1-micro"
 }
