@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-project = "infra-*"
-public_key_path = "~/.ssh/appuser.pub"
-disk_image = "reddit-base" 
-private_key_path = "~/.ssh/appuser"
-zone = "europe-west1-b"
 
-=======
-
-project = "infra-*"
+project = "infra-**"
 public_key_path = "~/.ssh/appuser.pub"
 disk_image = "reddit-base" 
 private_key_path = "~/.ssh/appuser"
 zone = "europe-west1-b"
 
 
->>>>>>> 11e6a1493386489db96cf576959e377f4fd74548
