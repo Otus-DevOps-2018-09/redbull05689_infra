@@ -1,5 +1,8 @@
 {
-    "project_id": "myproject",
-    "source_image_family": "ubuntu-1804-lts",
-    "machine_type": "f1-micro"
+    "project_id": "infra-****",
+    "source_image_family": "ubuntu-1604-lts",
+    "machine_type": "f1-micro",
+    "disk_size": "10",
+    "disk_type": "pd-standard"
 }
+
