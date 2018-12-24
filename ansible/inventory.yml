@@ -7,5 +7,7 @@ app:
 db: 
   hosts: 
     dbserver: 
-      ansible_host: 35.240.50.16 
+
+      ansible_host: 35.205.10.77
+
 
