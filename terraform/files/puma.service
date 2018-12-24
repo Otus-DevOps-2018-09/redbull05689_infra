@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [Unit]
 Description=puma
 
@@ -7,3 +8,16 @@ ExecStart=/usr/local/bin/puma
 
 [Install]
 WantedBy=multi-user.targeti
+=======
+
+[Unit]
+Description=puma
+
+[Service]
+WorkingDirectory=/home/appuser/reddit
+ExecStart=/usr/local/bin/puma
+
+[Install]
+WantedBy=multi-user.targeti
+
+>>>>>>> 11e6a1493386489db96cf576959e377f4fd74548
