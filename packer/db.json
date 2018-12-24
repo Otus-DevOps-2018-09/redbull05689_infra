@@ -25,13 +25,8 @@
       "network": "{{user `network`}}",
       "ssh_username": "appuser"
     }
-  ],
-  "provisioners": [
-    {
-      "type": "ansible",
-      "playbook_file": "ansible/packer_db.yml"
-      } 
   ]
 }
+
 
 

@@ -1,5 +1,6 @@
+
 variable project {
-  description = "Project ID"
+  description = "Project id"
   default = "infra-219417"
 }
 
@@ -47,3 +48,4 @@ variable source_ranges {
   description = "IP address for firewall rule"
   default     = ["195.14.39.100/32"]
 }
+
