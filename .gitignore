@@ -5,9 +5,11 @@ tfstate.backup
 *.tfvars
 .terraform/
 terraform.tfstate.backup
+
 *.retry
 jdauphant.nginx
 vault.key
+
 # Vagrant & molecule
 .vagrant/
 *.log
